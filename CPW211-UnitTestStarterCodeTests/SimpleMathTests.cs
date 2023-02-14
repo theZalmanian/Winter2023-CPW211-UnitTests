@@ -32,10 +32,23 @@ namespace CPW211_UnitTestStarterCode.Tests
         }
 
         [TestMethod]
-        public void Multiply_TwoNumbers_ReturnsProduct()
+        [DataRow(5, 5)]
+        [DataRow(10, 100)]
+        [DataRow(-1, -10)]
+        [DataRow(0, -0)]
+        public void Multiply_TwoNumbers_ReturnsProduct(double num1, double num2)
         {
-            // Use a few pairs of values to test the Multiply method
-            Assert.Fail();
+            // Arrange
+            // Setup expected sum
+            double expectedSum = num1 * num2;
+
+            // Act
+            // Calculate the sum of both numbers using SimpleMath.Multiply()
+            double actualSum = SimpleMath.Multiply(num1, num2);
+
+            // Assert
+            // Make sure the return value was as expected
+            Assert.AreEqual(expectedSum, actualSum);
         }
 
         [TestMethod]
