@@ -54,9 +54,10 @@ namespace CPW211_UnitTestStarterCode.Tests
         [TestMethod]
         public void Divide_DenominatorZero_ThrowsArgumentException()
         {
-            // Divide by zero should throw an argument exception with a message
-            // "Denominator cannot be zero"
-            Assert.Fail();
+            // Assert => Act
+            // Divide by zero should throw an argument exception
+            Assert.ThrowsException<ArgumentException>
+                (() => SimpleMath.Divide(10, 0));
         }
 
         // TODO: Test Divide method with two valid numbers
