@@ -25,9 +25,16 @@ namespace CPW211_UnitTestStarterCode
             return a + b;
         }
 
+        /// <summary>
+        /// Calculates and returns the sum of the given numbers when subtracted from one another
+        /// </summary>
+        /// <param name="a">The first operand</param>
+        /// <param name="b">The second operand</param>
+        /// <returns>The sum of both numbers when subtracted</returns>
         public static double Subtract(double a, double b)
         {
-            throw new NotImplementedException();
+            // Calculate and return the sum            
+            return a - b;
         }
 
         public static double Multiply(double a, double b)
