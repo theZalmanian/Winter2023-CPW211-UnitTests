@@ -1,4 +1,5 @@
-# UnitTests
+# Unit Tests - Simple Math
+A very basic calculator application to practice Unit Testing
 
 ### Requirements:
 - Implement logic in the "SimpleMath" class
