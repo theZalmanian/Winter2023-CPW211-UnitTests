@@ -14,11 +14,11 @@ namespace CPW211_UnitTestStarterCode
     public static class SimpleMath
     {
         /// <summary>
-        /// Calculates and returns the sum of the given numbers when added together
+        /// Calculates and returns the sum of the given numbers when added
         /// </summary>
         /// <param name="a">The first operand</param>
         /// <param name="b">The second operand</param>
-        /// <returns>The sum of both numbers when added together</returns>
+        /// <returns>The sum of both numbers when added</returns>
         public static double Add(double a, double b)
         {
             // Calculate and return the sum            
@@ -26,7 +26,7 @@ namespace CPW211_UnitTestStarterCode
         }
 
         /// <summary>
-        /// Calculates and returns the sum of the given numbers when subtracted from one another
+        /// Calculates and returns the sum of the given numbers when subtracted
         /// </summary>
         /// <param name="a">The first operand</param>
         /// <param name="b">The second operand</param>
@@ -37,6 +37,12 @@ namespace CPW211_UnitTestStarterCode
             return a - b;
         }
 
+        /// <summary>
+        /// Calculates and returns the product of the given numbers when multiplied
+        /// </summary>
+        /// <param name="a">The first operand</param>
+        /// <param name="b">The second operand</param>
+        /// <returns>The sum of both numbers when multiplied</returns>
         public static double Multiply(double a, double b)
         {
             throw new NotImplementedException();
