@@ -61,6 +61,25 @@ namespace CPW211_UnitTestStarterCode.Tests
         }
 
         // TODO: Test Divide method with two valid numbers
+        [TestMethod]
+        [DataRow(5, 5)]
+        [DataRow(10, 100)]
+        [DataRow(-1, -10)]
+        [DataRow(128, 6)]
+        public void Divide_TwoNumbers_ReturnsProduct(double num1, double num2)
+        {
+            // Arrange
+            // Setup expected sum
+            double expectedSum = num1 / num2;
+
+            // Act
+            // Calculate the sum of both numbers using SimpleMath.Divide()
+            double actualSum = SimpleMath.Divide(num1, num2);
+
+            // Assert
+            // Make sure the return value was as expected
+            Assert.AreEqual(expectedSum, actualSum);
+        }
 
         // TODO: Test subtract method with two valid numbers
         [TestMethod()]
