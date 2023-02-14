@@ -49,9 +49,26 @@ namespace CPW211_UnitTestStarterCode
             return a * b;
         }
 
+        /// <summary>
+        /// Calculates and returns the product of the given numbers when divided.
+        /// <br></br>
+        /// Throws an ArgumentException if either given number is a zero
+        /// </summary>
+        /// <param name="a">The first operand</param>
+        /// <param name="b">The second operand</param>
+        /// <returns>The sum of both numbers when divided</returns>
+        /// <exception cref="ArgumentException"></exception>
         public static double Divide(double a, double b)
         {
-            throw new NotImplementedException();
+            // Check if either given number is a 0
+            if (a == 0 || b == 0)
+            {
+                // Display an error message
+                throw new ArgumentException("Denominator cannot be zero");
+            }
+
+            // Otherwise, calculate and return the sum            
+            return a / b;
         }
     }
 }
