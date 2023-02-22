@@ -60,8 +60,8 @@ namespace CPW211_UnitTestStarterCode
         /// <exception cref="ArgumentException"></exception>
         public static double Divide(double a, double b)
         {
-            // Check if either given number is a 0
-            if (a == 0 || b == 0)
+            // Check if the denominator (second operand) is a 0
+            if (b == 0)
             {
                 // Display an error message
                 throw new ArgumentException("Denominator cannot be zero");
